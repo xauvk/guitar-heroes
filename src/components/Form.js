@@ -5,7 +5,6 @@ function Form () {
 
     const handleForm = (e) => {
         setForm(form => {
-            let newValue = false
             if (e.target.name === 'electric') {
                 if (e.target.value === 'electric') {
                     return { ...form, [e.target.name] : true }

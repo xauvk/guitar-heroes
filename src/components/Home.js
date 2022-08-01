@@ -8,7 +8,8 @@ import { Route, Switch } from "react-router-dom";
 import {useState, useEffect} from 'react'
 
 function Home() {
-    const [guitarData, setGuitarData] = useState([])
+    const [guitarData, setGuitarData] = useState([]);
+    const [cartItem, setCartItem] = useState([]);
     
     useEffect(() => {
         fetch('http://localhost:3000/guitars')
@@ -23,20 +24,25 @@ function Home() {
     }
     const filteredGuitars = guitarData.filter(guitar => guitar.brand.toLowerCase().includes(searchString.toLowerCase()))
 
+
+    const handleCart = guitar => {
+        setCartItem([...cartItem, guitar]);
+    }
+
     return (
         <>
             <Header />
             <NavBar />
-            <Search handleSearch={handleSearch} />
             <Switch />
                 <Route exact path="/">
-                    <GuitarList guitarData={filteredGuitars}/>
+                    <Search handleSearch={handleSearch} />
+                    <GuitarList guitarData={filteredGuitars} handleCart={handleCart}/>
                 </Route>
                 <Route path="/form">
                     <Form />
                 </Route>
                 <Route path="/cart">
-                    <Cart />
+                    <Cart cart={cartItem}/>
                 </Route>
             <Switch />
         </>

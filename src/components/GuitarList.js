@@ -1,10 +1,10 @@
 import React from "react";
 import GuitarCard from "./GuitarCard"
 
-function GuitarList ({guitarData}) {
+function GuitarList ({guitarData, handleCart}) {
 
     const guitarComponents = guitarData.map(guitar => {
-        return <GuitarCard {... guitar} key={guitar.key} />
+        return <GuitarCard guitar={guitar} key={guitar.id} handleCart={handleCart} />
     }) 
 
     return (

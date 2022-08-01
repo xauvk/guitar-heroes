@@ -13,7 +13,7 @@
       "brand": "Buzz Lightyear",
       "electric": true,
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14,
+      "price": 14,
       "condition": "bad"
     },
     {
@@ -29,7 +29,7 @@
       "brand": "Buzz Lightyear",
       "electric": true,
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14,
+      "price": 14,
       "condition": "bad"
     },
     {
@@ -45,7 +45,7 @@
       "brand": "Buzz Lightyear",
       "electric": true,
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14,
+      "price": 14,
       "condition": "bad"
     },
     {
