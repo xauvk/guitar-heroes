@@ -1,9 +1,9 @@
-import Header from './components/Header';
-import Search from './components/Search';
-import GuitarList from './components/GuitarList';
-import Form from './components/Form';
+import Header from './Header';
+import Search from './Search';
+import GuitarList from './GuitarList';
+import Form from './Form';
+import Cart from './Cart';
 import { Route, Switch } from "react-router-dom";
-import Cart from './components/Cart';
 
 
 function Home() {
