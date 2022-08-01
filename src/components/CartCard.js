@@ -7,7 +7,7 @@ function CartCard ( {guitar} ) {
             <h1>{guitar.brand}</h1>
             <img src={guitar.image} alt={guitar.brand} className="image"/>
             <h4>{guitar.condition}</h4>
-            <p>{guitar.price}</p>
+            <p>${guitar.price}</p>
         </div>
     )
 }

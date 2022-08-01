@@ -2,35 +2,35 @@
   "guitars": [
     {
       "id": 1,
-      "brand": "Woody",
+      "brand": "Gibson Les Paul Standard '60s Electric Guitar Bourbon Burst",
       "electric": true,
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "price": 8,
-      "condition": "bad"
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/L54578000002000-00-720x720.jpg",
+      "price": 2799.00,
+      "condition": "new"
     },
     {
       "id": 2,
-      "brand": "Buzz Lightyear",
+      "brand": "Squier Classic Vibe '70s Jaguar Limited Edition Electric Guitar Daphne Blue",
       "electric": true,
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "price": 14,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/L66124000001000-00-720x720.jpg",
+      "price": 539.99,
       "condition": "bad"
     },
     {
       "id": 3,
-      "brand": "Woody",
-      "electric": true,
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "price": 8,
-      "condition": "bad"
+      "brand": "Martin D-28 Standard Dreadnought Acoustic Guitar Natural",
+      "electric": false,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/K40776000001000-00-720x720.jpg",
+      "price": 3199.00,
+      "condition": "new"
     },
     {
       "id": 4,
-      "brand": "Buzz Lightyear",
-      "electric": true,
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "price": 14,
-      "condition": "bad"
+      "brand": "Rogue RD80 Dreadnought Acoustic Guitar Sunburst",
+      "electric": false,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/H80040000001000-00-720x720.jpg",
+      "price": 93.49,
+      "condition": "new"
     },
     {
       "id": 5,
