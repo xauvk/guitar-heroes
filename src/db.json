@@ -1,0 +1,74 @@
+{
+    "guitars": [
+      {
+        "id": 1,
+        "brand": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "price": 8,
+        "condition": "bad"
+      },
+      {
+        "id": 2,
+        "brand": "Buzz Lightyear",
+        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+        "likes": 14,
+        "condition": "bad"
+      },
+      {
+        "id": 3,
+        "brand": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "price": 8,
+        "condition": "bad"
+      },
+      {
+        "id": 4,
+        "brand": "Buzz Lightyear",
+        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+        "likes": 14,
+        "condition": "bad"
+      },
+      {
+        "id": 5,
+        "brand": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "price": 8,
+        "condition": "bad"
+      },
+      {
+        "id": 6,
+        "name": "Buzz Lightyear",
+        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+        "likes": 14,
+        "condition": "bad"
+      },
+      {
+        "id": 7,
+        "brand": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "price": 8,
+        "condition": "bad"
+      },
+      {
+        "id": 8,
+        "name": "Buzz Lightyear",
+        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+        "price": 14,
+        "condition": "bad"
+      },
+      {
+        "id": 9,
+        "brand": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "price": 8,
+        "condition": "bad"
+      },
+      {
+        "id": 10,
+        "name": "Buzz Lightyear",
+        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+        "price": 14,
+        "condition": "bad"
+      }
+    ]
+  }
