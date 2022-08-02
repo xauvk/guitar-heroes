@@ -9,7 +9,7 @@ import {useState, useEffect} from 'react'
 
 function Home() {
     const [guitarData, setGuitarData] = useState([]);
-    const [cartItem, setCartItem] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
     
     useEffect(() => {
         fetch('http://localhost:3000/guitars')
@@ -26,14 +26,14 @@ function Home() {
 
 
     const removeFromCart = (id) => {
-        const cartList = cartItem.filter(
+        const cartList = cartItems.filter(
             item => item.id !== id
         )
-        setCartItem(cartList)
+        setCartItems(cartList)
     }
 
     const addToCart = guitar => {
-        setCartItem([...cartItem, guitar]);
+        setCartItems([...cartItems, guitar]);
     }
 
     const addGuitar = newGuitar => {
@@ -47,13 +47,13 @@ function Home() {
             <Switch />
                 <Route exact path="/">
                     <Search handleSearch={handleSearch} />
-                    <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} />
+                    <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
                 </Route>
                 <Route path="/form">
                     <Form addGuitar={addGuitar}/>
                 </Route>
                 <Route path="/cart">
-                    <Cart cart={cartItem}/>
+                    <Cart cart={cartItems}/>
                 </Route>
             <Switch />
         </>

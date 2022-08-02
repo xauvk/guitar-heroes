@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
 
-function GuitarCard ({guitar, addToCart, removeFromCart}) {
-    const [inCart, setInCart]   = useState(false)
+function GuitarCard ({guitar, addToCart, removeFromCart, cartItems}) {
+    const [inCart, setInCart]   = useState(cartItems.includes(guitar))
     const handleClick = () => {
      setInCart((cart) => !cart)
     }
 
     useEffect(() => {
         inCart ?  addToCart(guitar) : removeFromCart(guitar.id)
-    }, [inCart])
+    }, [inCart, addToCart, removeFromCart, guitar])
     
     return (
         <div>
