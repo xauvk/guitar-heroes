@@ -11,12 +11,14 @@ function GuitarCard ({guitar, addToCart, removeFromCart, cartItems}) {
     }, [inCart])
     
     return (
-        <div>
-            <h1>{guitar.brand}</h1>
-            <img src={guitar.image} alt={guitar.brand} className="image"/>
-            <h4>{guitar.condition}</h4>
-            <p>${guitar.price}</p>
-            {inCart ? (<button onClick={handleClick}>Remove from Cart</button>) : (<button onClick={handleClick}>Add to Cart</button>)}
+        <div className="card">
+            <h3>{guitar.brand}</h3>
+            <img src={guitar.image} alt={guitar.brand} className="image" />
+            <div className="container">
+                <h4>{guitar.condition}</h4>
+                <p>${guitar.price}</p>
+                {inCart ? (<button onClick={handleClick}>Remove from Cart</button>) : (<button onClick={handleClick}>Add to Cart</button>)}
+            </div>
         </div>
     )
 }

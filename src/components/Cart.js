@@ -7,9 +7,11 @@ function Cart({cart}) {
     }) 
 
     return (
-        <div className="cart">
+        <div>
             <h1>In Cart: </h1>
-            {cartComponents}
+            <div className="grid-container">
+                {cartComponents}
+            </div>
         </div>
     )
 }

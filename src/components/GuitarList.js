@@ -8,7 +8,7 @@ function GuitarList ({guitarData, addToCart, removeFromCart, cartItems}) {
     }) 
 
     return (
-        <div>
+        <div className="grid-container">
             {guitarComponents}
         </div>
     )
