@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from "react";
 
-function GuitarCard ({guitar, handleCart}) {
+function GuitarCard ({guitar, addToCart, removeFromCart}) {
     const [inCart, setInCart]   = useState(false)
     const handleClick = () => {
-     setInCart((cart) => !cart);
-     handleCart(guitar)
+     setInCart((cart) => !cart)
     }
 
+    useEffect(() => {
+        inCart ?  addToCart(guitar) : removeFromCart(guitar.id)
+    }, [inCart])
+    
     return (
         <div>
             <h1>{guitar.brand}</h1>

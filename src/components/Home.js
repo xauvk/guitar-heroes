@@ -25,8 +25,19 @@ function Home() {
     const filteredGuitars = guitarData.filter(guitar => guitar.brand.toLowerCase().includes(searchString.toLowerCase()))
 
 
-    const handleCart = guitar => {
+    const removeFromCart = (id) => {
+        const cartList = cartItem.filter(
+            item => item.id !== id
+        )
+        setCartItem(cartList)
+    }
+
+    const addToCart = guitar => {
         setCartItem([...cartItem, guitar]);
+    }
+
+    const addGuitar = newGuitar => {
+        setGuitarData(guitar => [...guitar, newGuitar])
     }
 
     return (
@@ -36,10 +47,10 @@ function Home() {
             <Switch />
                 <Route exact path="/">
                     <Search handleSearch={handleSearch} />
-                    <GuitarList guitarData={filteredGuitars} handleCart={handleCart}/>
+                    <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} />
                 </Route>
                 <Route path="/form">
-                    <Form />
+                    <Form addGuitar={addGuitar}/>
                 </Route>
                 <Route path="/cart">
                     <Cart cart={cartItem}/>

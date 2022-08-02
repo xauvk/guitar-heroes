@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form () {
+function Form ({addGuitar}) {
     const [form, setForm] = useState({})
 
     const handleForm = (e) => {
@@ -15,7 +15,8 @@ function Form () {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(form)
+        addGuitar(form)
+        e.target.reset()
     }
 
     return (

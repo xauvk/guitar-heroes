@@ -10,7 +10,8 @@ function Cart({cart}) {
 
     return (
         <div className="cart">
-          {cartComponents}
+            <h1>In Cart: </h1>
+            {cartComponents}
         </div>
     )
 }
