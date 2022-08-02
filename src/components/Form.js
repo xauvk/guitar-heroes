@@ -1,21 +1,31 @@
 import React, { useState } from "react";
 
 function Form ({addGuitar}) {
-    const [form, setForm] = useState({})
+    const [form, setForm] = useState({'electric':true})
 
     const handleForm = (e) => {
         setForm(form => {
             if (e.target.name === 'electric') {
                 if (e.target.value === 'electric') {
-                    return { ...form, [e.target.name] : true }
-                    } else return { ...form, [e.target.name] : false }
+                    return { ...form, 'electric' : true }
+                    } else return { ...form, 'electric' : false }
             }
             return { ...form, [e.target.name] : e.target.value }
         })
+        
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        addGuitar(form)
+        console.log(form)
+        fetch('http://localhost:3000/guitars',
+        {
+            'method': 'POST',
+            'headers': {
+                'Content-Type': 'application/json'
+            },
+            'body': JSON.stringify(form)
+        })
+            .then(addGuitar(form))
         e.target.reset()
     }
 

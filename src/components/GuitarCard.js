@@ -8,7 +8,7 @@ function GuitarCard ({guitar, addToCart, removeFromCart, cartItems}) {
 
     useEffect(() => {
         inCart ?  addToCart(guitar) : removeFromCart(guitar.id)
-    }, [inCart, addToCart, removeFromCart, guitar])
+    }, [inCart])
     
     return (
         <div>
