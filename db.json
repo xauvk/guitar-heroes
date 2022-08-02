@@ -81,44 +81,44 @@
       "condition": "Used"
     },
     {
-      "electric": false,
+      "id": 11,
       "brand": "Mitchell T331 Solid-Top Mahogany Dreadnought Acoustic Guitar",
-      "condition": "New",
-      "price": 178.49,
+      "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L25507000000000-00-720x720.jpg",
-      "id": 11
+      "price": 178.49,
+      "condition": "New"
     },
     {
-      "electric": false,
+      "id": 12,
       "brand": "Mitchell DJ120 Junior Dreadnought Acoustic Guitar Natural",
-      "condition": "Used",
-      "price": 127.49,
-      "image": "https://media.guitarcenter.com/is/image/MMGS7/J41452000001000-00-720x720.jpg",
-      "id": 12
-    },
-    {
-      "electric": true,
-      "brand": "Jackson X Series Rhoads RRX24 Electric Guitar Gloss Black",
-      "condition": "New",
-      "price": 849.99,
-      "image": "https://media.guitarcenter.com/is/image/MMGS7/L51632000004000-00-720x720.jpg",
-      "id": 13
-    },
-    {
       "electric": false,
-      "brand": "Greg Bennett Design by Samick GOM-120RS Orchestra Solid Spruce Top Acoustic Guitar Gloss Natural",
-      "condition": "New",
-      "price": 169.99,
-      "image": "https://media.guitarcenter.com/is/image/MMGS7/L83459000002000-00-720x720.jpg",
-      "id": 14
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/J41452000001000-00-720x720.jpg",
+      "price": 127.49,
+      "condition": "Used"
     },
     {
+      "id": 13,
+      "brand": "Jackson X Series Rhoads RRX24 Electric Guitar Gloss Black",
       "electric": true,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/L51632000004000-00-720x720.jpg",
+      "price": 849.99,
+      "condition": "New"
+    },
+    {
+      "id": 14,
+      "brand": "Greg Bennett Design by Samick GOM-120RS Orchestra Solid Spruce Top Acoustic Guitar Gloss Natural",
+      "electric": false,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/L83459000002000-00-720x720.jpg",
+      "price": 169.99,
+      "condition": "New"
+    },
+    {
+      "id": 15,
       "brand": "Dean Vendetta XM Electric Guitar Natural",
-      "condition": "Used",
-      "price": 199.00,
+      "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/512150000010000-00-720x720.jpg",
-      "id": 15
+      "price": 199.00,
+      "condition": "Used"
     }
   ]
 }

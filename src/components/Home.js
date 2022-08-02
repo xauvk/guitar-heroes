@@ -16,7 +16,7 @@ function Home() {
          .then((response) => response.json())
          .then((data) => {setGuitarData(data)})
         }, [])
-    
+        
     
     const [searchString, setSearchString] = useState('')
     const handleSearch = (string) => {
