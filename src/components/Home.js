@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react'
 function Home() {
     const [guitarData, setGuitarData] = useState([]);
     const [cartItems, setCartItems] = useState([]);
+    const [sort, setSort] = useState(false);
     
     useEffect(() => {
         fetch('http://localhost:3000/guitars')
@@ -24,6 +25,13 @@ function Home() {
     }
     const filteredGuitars = guitarData.filter(guitar => guitar.brand.toLowerCase().includes(searchString.toLowerCase()))
 
+    const toggleSort = () => {
+        setSort(sort => !sort)
+    }
+
+    const sortedGuitars = filteredGuitars.sort( (objA, objB) => 
+        sort ? objA.price - objB.price : 0
+    )
 
     const removeFromCart = (id) => {
         const cartList = cartItems.filter(
@@ -41,21 +49,25 @@ function Home() {
     }
 
     return (
-        <div className='home'>
+        <div className='whole-app'>
             <Switch />
-                <Route exact path="/">
-                    <Header />
-                    <NavBar />
-                    <Search handleSearch={handleSearch} />
-                    <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
+                <Route className="home" exact path="/">
+                    <div className="home">
+                        <Header />
+                        <NavBar />
+                        <Search handleSearch={handleSearch} sort={sort} toggleSort={toggleSort} />
+                        <GuitarList guitarData={sortedGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
+                    </div>
                 </Route>
                 <Route path="/form">
                     <NavBar />
                     <Form addGuitar={addGuitar}/>
                 </Route>
                 <Route path="/cart">
-                    <NavBar />
-                    <Cart cart={cartItems}/>
+                    <div className="home">
+                        <NavBar />
+                        <Cart cart={cartItems}/>
+                    </div>
                 </Route>
             <Switch />
         </div>

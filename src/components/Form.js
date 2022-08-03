@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useHistory} from "react-router-dom";
 
 function Form ({addGuitar}) {
     const [form, setForm] = useState({'electric':true})
@@ -14,6 +15,9 @@ function Form ({addGuitar}) {
         })
         
     }
+
+    let history = useHistory();
+
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(form)
@@ -26,29 +30,30 @@ function Form ({addGuitar}) {
             'body': JSON.stringify(form)
         })
             .then(addGuitar(form))
+            history.push("/");
         e.target.reset()
     }
 
     return (
         <div>
             <form onSubmit={handleSubmit} className="form">
-                <label className="label" for="brand">Brand/Model: </label>
+                <label className="label" htmlFor="brand">Brand/Model: </label>
                 <br></br>
                 <input className="form-input" onChange={handleForm} type="text" name="brand"  required/>
                 <br></br>
-                <label className="label" for="condition">Condition: </label>
+                <label className="label" htmlFor="condition">Condition: </label>
                 <br></br>
                 <input className="form-input" onChange={handleForm} type="text" name="condition" required/>
                 <br></br>
-                <label className="label" for="price">Price: </label>
+                <label className="label" htmlFor="price">Price: </label>
                 <br></br>
                 <input className="form-input" onChange={handleForm} type="number" name="price" step='0.01' required/>
                 <br></br>
-                <label className="label" for="brand">Image of Guitar: </label>
+                <label className="label" htmlFor="brand">Image of Guitar: </label>
                 <br></br>
                 <input className="form-input" onChange={handleForm} type="text" name="image" required/>
                 <br></br>
-                <label className="label" for="electric">Type of Guitar: </label>
+                <label className="label" htmlFor="electric">Type of Guitar: </label>
                 <br></br>
                 <select onChange={handleForm} name="electric">
                     <option value={'electric'}>Electric</option>

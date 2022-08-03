@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search ({handleSearch}) {
+function Search ({handleSearch, sort, toggleSort}) {
     
     const onSearch = (e) => handleSearch(e.target.value);
     
@@ -12,6 +12,9 @@ function Search ({handleSearch}) {
                 type="text"
                 placeholder="Search..."
             />
+            <br></br>
+            <label>Price: Lowest to Highest</label>
+            <input checked={sort} onClick={toggleSort} type="checkbox" />
         </div>
     )
 }

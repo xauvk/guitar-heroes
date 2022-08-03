@@ -6,7 +6,7 @@ function NavBar () {
     return (
         <div className="nav">
             <NavLink exact to='/' className="navBar">
-                Home
+                Home 
             </NavLink>
             <NavLink exact to='/form' className="navBar">
                 Add a guitar
