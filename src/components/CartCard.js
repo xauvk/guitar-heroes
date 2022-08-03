@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 function CartCard ( {guitar} ) {
 
     return (
         <div className="card">
-            <h1>{guitar.brand}</h1>
+            <h3>{guitar.brand}</h3>
             <img src={guitar.image} alt={guitar.brand} className="image"/>
             <div className="container">
-                <h4>{guitar.condition}</h4>
-                <p>${guitar.price}</p>
+                <h4>Condition: {guitar.condition}</h4>
+                <p>Price: ${guitar.price}</p>
             </div>
         </div>
     )

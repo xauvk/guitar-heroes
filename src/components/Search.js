@@ -6,7 +6,7 @@ function Search ({handleSearch}) {
     
     return (
         <div >
-            <label htmlFor="search">Lookup Guitar: </label>
+            <label htmlFor="search" className="search-label">Lookup Guitar: </label>
             <input className="search-bar"
                 onChange={onSearch}
                 type="text"
