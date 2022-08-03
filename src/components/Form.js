@@ -31,16 +31,31 @@ function Form ({addGuitar}) {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} >
-                <input onChange={handleForm} type="text" name="brand" placeholder="Brand/Model"/>
-                <input onChange={handleForm} type="text" name="condition" placeholder="Condition of guitar"/>
-                <input onChange={handleForm} type="number" name="price" step='0.01' placeholder="Price"/>
-                <input onChange={handleForm} type="text" name="image" placeholder="Link to Image"/>
+            <form onSubmit={handleSubmit} className="form">
+                <label className="label" for="brand">Brand/Model: </label>
+                <br></br>
+                <input className="form-input" onChange={handleForm} type="text" name="brand"  required/>
+                <br></br>
+                <label className="label" for="condition">Condition: </label>
+                <br></br>
+                <input className="form-input" onChange={handleForm} type="text" name="condition" required/>
+                <br></br>
+                <label className="label" for="price">Price: </label>
+                <br></br>
+                <input className="form-input" onChange={handleForm} type="number" name="price" step='0.01' required/>
+                <br></br>
+                <label className="label" for="brand">Image of Guitar: </label>
+                <br></br>
+                <input className="form-input" onChange={handleForm} type="text" name="image" required/>
+                <br></br>
+                <label className="label" for="electric">Type of Guitar: </label>
+                <br></br>
                 <select onChange={handleForm} name="electric">
                     <option value={'electric'}>Electric</option>
                     <option value={'acoustic'}>Acoustic</option>
                 </select>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <br></br>
+                <button type="submit" className="submit-button">Submit</button>
             </form>
         </div>
     )

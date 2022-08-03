@@ -15,9 +15,9 @@ function GuitarCard ({guitar, addToCart, removeFromCart, cartItems}) {
             <h3>{guitar.brand}</h3>
             <img src={guitar.image} alt={guitar.brand} className="image" />
             <div className="container">
-                <h4>{guitar.condition}</h4>
-                <p>${guitar.price}</p>
-                {inCart ? (<button onClick={handleClick}>Remove from Cart</button>) : (<button onClick={handleClick}>Add to Cart</button>)}
+                <h4>Condition: {guitar.condition}</h4>
+                <p>Price: ${guitar.price}</p>
+                {inCart ? (<button className="button-on" onClick={handleClick}>Remove from Cart</button>) : (<button className="button-off" onClick={handleClick}>Add to Cart</button>)}
             </div>
         </div>
     )

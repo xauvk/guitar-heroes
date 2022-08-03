@@ -7,7 +7,7 @@ function Cart({cart}) {
     }) 
 
     return (
-        <div>
+        <div className="cart">
             <h1>In Cart: </h1>
             <div className="grid-container">
                 {cartComponents}

@@ -5,9 +5,9 @@ function Search ({handleSearch}) {
     const onSearch = (e) => handleSearch(e.target.value);
     
     return (
-        <div>
+        <div >
             <label htmlFor="search">Lookup Guitar: </label>
-            <input 
+            <input className="search-bar"
                 onChange={onSearch}
                 type="text"
                 placeholder="Search..."

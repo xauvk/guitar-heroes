@@ -13,7 +13,7 @@ function NavBar () {
                 Add a guitar
             </NavLink>
             {/* <br></br> */}
-            <NavLink exact to='/cart' className="navBar">
+            <NavLink exact to='/cart' className="nav-cart">
                 Cart
             </NavLink>
         </div>

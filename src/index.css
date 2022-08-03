@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient( to bottom right, rgb(238, 119, 8) 10%, rgb(131, 18, 10), rgb(238, 119, 8) 5%, rgb(131, 18, 10));
+  background-size: cover;
+
 }
 
 code {
@@ -17,12 +20,10 @@ code {
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: auto; */
   grid-gap: 10px;
-  /* background-color: #2196F3; */
   padding: 10px;
 }
 
 .grid-container > div {
-
   text-align: center;
   padding: 20px 0;
   font-size: 15px;
@@ -34,14 +35,16 @@ code {
   width: 80%;
   border-radius: 15px;
   margin: 40px auto 30px auto;
+  color: black;
+  background-color: white;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.486);
   padding: 20px 16px;
 }
 
@@ -51,6 +54,7 @@ img {
 }
 
 .navBar {
+  width: 100px;
   float: left;
   display: block;
   color: white;
@@ -59,14 +63,130 @@ img {
   text-decoration: none;
 }
 
+.navBar:hover:not(.active) {
+  background-color: rgb(56, 2, 2);
+}
+
+.nav-cart {
+  font-weight: bold;
+  width: 100px;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-cart:hover:not(.active) {
+  background-color: rgb(56, 2, 2);
+}
+
 .nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: rgb(161, 4, 4);
 }
+
+.search-bar {
+  margin-top: 1.5%;
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search-bar:focus {
+  background-color: lightblue;
+}
+
+select {
+  width: 300px;
+  margin: 8px 10px 30px 15px;
+  padding: 12px 20px;
+  background-color: #f1f1f1;
+}
+
+select:focus {
+  background-color: lightblue;
+}
+
+.form-input {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 10px 30px 15px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  background-color: lightblue;
+}
+
+.button-on {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+  }
+
+  .button-on:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button-off {
+    background-color: rgb(161, 4, 4);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+  }
+
+  .button-off:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .submit-button {
+    background-color: black;
+    margin: 30px;
+    /* margin-bottom: 500px; */
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 12px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .submit-button:hover {
+    background-color: rgb(161, 4, 4);
+  }

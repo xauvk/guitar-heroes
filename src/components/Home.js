@@ -41,7 +41,7 @@ function Home() {
     }
 
     return (
-        <>
+        <div className='home'>
             <Header />
             <NavBar />
             <Switch />
@@ -56,7 +56,7 @@ function Home() {
                     <Cart cart={cartItems}/>
                 </Route>
             <Switch />
-        </>
+        </div>
     )
 }
 
