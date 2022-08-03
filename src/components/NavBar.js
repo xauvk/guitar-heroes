@@ -8,11 +8,9 @@ function NavBar () {
             <NavLink exact to='/' className="navBar">
                 Home
             </NavLink>
-            {/* <br></br> */}
             <NavLink exact to='/form' className="navBar">
                 Add a guitar
             </NavLink>
-            {/* <br></br> */}
             <NavLink exact to='/cart' className="nav-cart">
                 Cart
             </NavLink>

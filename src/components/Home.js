@@ -42,17 +42,19 @@ function Home() {
 
     return (
         <div className='home'>
-            <NavBar />
             <Switch />
                 <Route exact path="/">
                     <Header />
+                    <NavBar />
                     <Search handleSearch={handleSearch} />
                     <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
                 </Route>
                 <Route path="/form">
+                    <NavBar />
                     <Form addGuitar={addGuitar}/>
                 </Route>
                 <Route path="/cart">
+                    <NavBar />
                     <Cart cart={cartItems}/>
                 </Route>
             <Switch />
