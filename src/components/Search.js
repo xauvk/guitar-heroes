@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search ({handleSearch, sort, toggleSort}) {
+function Search ({handleSearch, toggleSort}) {
     
     const onSearch = (e) => handleSearch(e.target.value);
     
@@ -14,7 +14,10 @@ function Search ({handleSearch, sort, toggleSort}) {
             />
             <br></br>
             <label>Price: Lowest to Highest</label>
-            <input checked={sort} onClick={toggleSort} type="checkbox" />
+            <input name="pricesort" value="lowtohigh" onClick={toggleSort} type="checkbox" />
+            <br></br><br></br>
+            <label>Price: Highest to Lowest</label>
+            <input name="pricesort" value="hightolow" onClick={toggleSort} type="checkbox" />
         </div>
     )
 }

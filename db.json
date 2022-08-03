@@ -6,7 +6,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L54578000002000-00-720x720.jpg",
       "price": 2799,
-      "condition": "New"
+      "condition": "New",
+      "description": "This Gibson Les Paul Standard '60s electric guitar replicates the historic models adopted by some of the most legendary players of all time. It features a solid mahogany body with an AA figured maple top, and its mahogany neck has a '60s-style SlimTaper profile. Loaded with a calibrated pair of BurstBucker 61 pickups and hand-wired controls, this Les Paul Standard '60s electric guitar has a huge voice that's always ready to rock. Time-tested hardware includes an ABR-1 bridge, stopbar tailpiece and Grover Rotomatic tuners."
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L66124000001000-00-720x720.jpg",
       "price": 539.99,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "The Squier Classic Vibe '70s Jaguar electric guitar turns up the volume on retro style, bringing the trademark Jaguar look and fine-tuned control system to players on a budget. This guitar produces incredible tone courtesy of its dual Fender-designed alnico single coil pickups, which run through lead and rhythm circuits with an array of switches that let you hone in on your unique sound. Small hands will appreciate the short 24” scale length and slim, comfortable “C”-shaped neck profile with an easy-playing 9.5”-radius Indian Laurel fingerboard. Vintage-style frets are tall and narrow for increased precision. Staying faithful to the original, this Jaguar offers a vintage-style tremolo system for expressive string-bending effects and floating bridge with individual barrel saddles. The headstock features 1970s-inspired markings, the hardware is nickel-plated and the neck has a tinted gloss finish for an old-school aesthetic vibe."
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/K40776000001000-00-720x720.jpg",
       "price": 3199,
-      "condition": "New"
+      "condition": "New",
+      "description": "Sometimes innovation is in the details. This is certainly true with Martin's reimagined 2017 D-28. After nearly a century at the helm, and as the quintessential workhorse of music legends like Hank Williams, The Beatles, Johnny Cash, Neil Young, Bob Dylan and so many more, Martin's legendary D-28 has been lovingly and artfully enhanced."
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/H80040000001000-00-720x720.jpg",
       "price": 93.49,
-      "condition": "New"
+      "condition": "New",
+      "description": "The Rogue RD80 dreadnought acoustic guitar is an epic bargain; you can't beat the features you get for the price. Mahogany stained back and sides with a bound blonde basswood top. The RD80 also features a nato neck with a bound sonokelin fingerboard and bridge. Top it all off with chrome hardware and you have a great starter guitar at a killer price."
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/512940000001000-00-720x720.jpg",
       "price": 139.99,
-      "condition": "New"
+      "condition": "New",
+      "description": "Yamaha's F335 gives you that classic dreadnought shape and sound at a price that won't break your bank. The F335's tonewood combination includes a laminate spruce top, rosewood fingerboard and bridge, and meranti back and sides. Gold die-cast tuners provide smooth and accurate tuning while a tortoise-pattern pickguard gives a bit more style."
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L29885000003000-00-720x720.jpg",
       "price": 161.49,
-      "condition": "New"
+      "condition": "New",
+      "description": "The auditorium-sized Mitchell O120CE cutaway acoustic-electric guitar is perfect for musicians looking to expand their sonic arsenal or for those who find larger guitars less comfortable. It features a select spruce top and mahogany back and sides for great tone and remarkably loud volume. Multi-ply body binding, abalone soundhole rosette, and high-gloss metallic finishes add to its stunning good looks and attitude, giving it a modern vibe in a timeless instrument. It also features a beautifully bound fingerboard and sealed, die-cast tuners for easy and stable tuning. Plus, built-in top-grade electronics with 3-band EQ and tuner let you tailor your sound then amplify it through any instrument amplifier or PA system."
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/J51473000001000-00-720x720.jpg",
       "price": 161.49,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "The auditorium-sized Mitchell O120CESB cutaway acoustic-electric guitar is perfect for musicians looking to expand their arsenal or for those who find larger guitars less comfortable. It features a select spruce top and mahogany back and sides for great tone and remarkably loud volume. Multi-ply body binding, abalone soundhole rosette and a high-gloss vintage sunburst finish add to its stunning good looks, giving it the classic vibe of a timeless instrument. The O120CESB auditorium also features a beautifully bound fingerboard and sealed, die-cast tuners for easy and stable tuning. Plus, built-in top-grade electronics with 3-band EQ and tuner let you tailor your sound then amplify it through any instrument amplifier or PA system."
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L25689000002001-00-720x720.jpg",
       "price": 149.99,
-      "condition": "New"
+      "condition": "New",
+      "description": "The Mitchell TD100OR Short-Scale Electric Guitar features a traditional, solid-wood, double-cutaway design in an Orange finish, and a maple neck with jatoba tonewood fretboard — all in an easy-playing size. It’s the perfect first guitar for the beginner, or for the more experienced player who can appreciate its feature-rich appointments. The slim-taper neck profile will feel instantly comfortable in any player’s hands, and the ultra-carve heel joint allows access to the upper frets with ease. A versatile pickup configuration includes one humbucker and two single-coil pickups that cover a wide variety of musical genres and styles. A hard-tail bridge, solid bridge saddles and through-body string loading provide solid tuning stability and outstanding resonance. And with the TD100OR’s sealed gear tuners, master volume and tone controls, 5-way pickup selector switch and 22 medium-jumbo frets, it's a feature-packed, modern take on a short-scale instrument."
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L75292000000000-00-720x720.jpg",
       "price": 169.99,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "Part of the Terra Series, the Mitchell T233E auditorium-size, acoustic-electric guitar offers a combination of comfortable playing, high-quality features and a modern design for the advancing student and performing musician. It features an all-mahogany body, including top, back and sides for a warm, rich tone, and the attractive open pore finish enhances its overall resonance. The advanced, forward-shifted scalloped X-bracing increases the T233E’s tone and projection, while its built-in preamp with tuner names it a breeze to plug into any amp or mixing board. An easy-to-play, slim mahogany neck makes learning difficult passages easier and creates superior playability for the advancing musician. High-ratio sealed gear tuners allow for quick and accurate tuning of this head-turning instrument that is unmatched in its price class."
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/J49220000001000-00-720x720.jpg",
       "price": 219.99,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "The FSR Bullet Tele is a simple, affordable and practical guitar designed for beginners and students. A perfect choice for a first guitar no matter who you are or what style of music you want to learn. Featuring the classic features that made the Tele one of the world's favorite guitars, the FSR Bullet Tele Maple Fingerboard electric guitar is a great introduction to the Fender family."
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L25507000000000-00-720x720.jpg",
       "price": 178.49,
-      "condition": "New"
+      "condition": "New",
+      "description": "To succeed in music, you need to start off with the right instrument. With that in mind, Mitchell created the Terra Series acoustic and acoustic/electric guitars, which includes this T331 dreadnought acoustic. The Terra Series offers guitarists budget-friendly options with great looks and tone to inspire and keep players engaged on their musical journey."
     },
     {
       "id": 12,
@@ -94,7 +105,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/J41452000001000-00-720x720.jpg",
       "price": 127.49,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "The Mitchell DJ120 Junior Dreadnought Acoustic Guitar has a reduced scale and body size that make it a perfect choice for little guitarists-in-training, as well as an incredible travel guitar for musicians of any level. It's crafted with a solid Englemann spruce top with scalloped bracing and mahogany back and sides. It's carved mahogany back provides increased bass response and generates a balanced tone with plenty of projection. The thinner finish allows the body to resonate more freely."
     },
     {
       "id": 13,
@@ -102,7 +114,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L51632000004000-00-720x720.jpg",
       "price": 849.99,
-      "condition": "New"
+      "condition": "New",
+      "description": "The Jackson X Series models continue the metal legacy pioneered by the immortal Randy Rhoads. Regal and proud, the RRX24 offers fantastic tone, ultra-fast playability and unbelievable value for 21st century guitarists. Decked out for today's modern metaller, the RRX24 delivers searing tone from a pair of active Seymour Duncan Blackout pickups that can be further shaped by two volume knobs, a single tone control and three-way blade switch. It's also equipped with a recessed Floyd Rose Special double-locking tremolo system for outstanding sustain and solid intonation."
     },
     {
       "id": 14,
@@ -110,7 +123,8 @@
       "electric": false,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L83459000002000-00-720x720.jpg",
       "price": 169.99,
-      "condition": "New"
+      "condition": "New",
+      "description": "With its Orchestra sized body style and 25.5”scale length, the GOM-120RS lends itself well to all styles of playing. The solid Engelmann spruce top offers a full sound with plenty of projection and sustain, complemented by the Ovangkol back and sides. The GOM-120RS will allow players to move effortlessly from powerful strumming to intimate fingerpicking. Available in Satin and Gloss finishes."
     },
     {
       "id": 15,
@@ -118,7 +132,8 @@
       "electric": true,
       "image": "https://media.guitarcenter.com/is/image/MMGS7/512150000010000-00-720x720.jpg",
       "price": 199,
-      "condition": "Used"
+      "condition": "Used",
+      "description": "The Dean Vendetta XM Electric Guitar has a fabulous looking lightweight string-thru paulownia body with incredible resonance. Dual naked humbuckers pump out huge chunk and searing sustain. Rosewood fretboard on a maple neck with 24-fret access is sweet and fleet."
     }
   ]
 }

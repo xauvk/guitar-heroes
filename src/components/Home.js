@@ -10,7 +10,8 @@ import {useState, useEffect} from 'react'
 function Home() {
     const [guitarData, setGuitarData] = useState([]);
     const [cartItems, setCartItems] = useState([]);
-    const [sort, setSort] = useState(false);
+    const [ sortLowToHigh, setSortLowToHigh] = useState(false);
+    const [ sortHighToLow, setSortHighToLow ] = useState(false);
     
     useEffect(() => {
         fetch('http://localhost:3000/guitars')
@@ -25,13 +26,23 @@ function Home() {
     }
     const filteredGuitars = guitarData.filter(guitar => guitar.brand.toLowerCase().includes(searchString.toLowerCase()))
 
-    const toggleSort = () => {
-        setSort(sort => !sort)
+    const toggleSort = (event) => {
+        if (event.target.value === "lowtohigh"){
+            setSortLowToHigh(sortLowToHigh => !sortLowToHigh)
+            setSortHighToLow(false)
+        } else {
+            setSortLowToHigh(false)
+            setSortHighToLow(sortHighToLow => !sortHighToLow)
+        }
     }
 
-    const sortedGuitars = filteredGuitars.sort( (objA, objB) => 
-        sort ? objA.price - objB.price : 0
-    )
+    const sortedGuitars = () => {
+        if (sortLowToHigh === true) {
+            return filteredGuitars.sort( (objA, objB) =>  objA.price - objB.price
+        )} else if (sortHighToLow === true) {
+            return filteredGuitars.sort( (objA, objB) =>  objB.price - objA.price
+        )} else return filteredGuitars
+    }
 
     const removeFromCart = (id) => {
         const cartList = cartItems.filter(
@@ -50,12 +61,12 @@ function Home() {
 
     return (
         <div className='whole-app'>
+            <Header />
             <Switch />
                 <Route className="home" exact path="/">
                     <div className="home">
-                        <Header />
                         <NavBar />
-                        <Search handleSearch={handleSearch} sort={sort} toggleSort={toggleSort} />
+                        <Search handleSearch={handleSearch} toggleSort={toggleSort} />
                         <GuitarList guitarData={sortedGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
                     </div>
                 </Route>

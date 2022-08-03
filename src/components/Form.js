@@ -13,7 +13,6 @@ function Form ({addGuitar}) {
             }
             return { ...form, [e.target.name] : e.target.value }
         })
-        
     }
 
     let history = useHistory();
@@ -37,9 +36,11 @@ function Form ({addGuitar}) {
     return (
         <div>
             <form onSubmit={handleSubmit} className="form">
+                <h1>Add your own guitar!</h1>
+                <br></br>
                 <label className="label" htmlFor="brand">Brand/Model: </label>
                 <br></br>
-                <input className="form-input" onChange={handleForm} type="text" name="brand"  required/>
+                <input className="form-input" onChange={handleForm} type="text" name="brand" required/>
                 <br></br>
                 <label className="label" htmlFor="condition">Condition: </label>
                 <br></br>
@@ -59,6 +60,10 @@ function Form ({addGuitar}) {
                     <option value={'electric'}>Electric</option>
                     <option value={'acoustic'}>Acoustic</option>
                 </select>
+                <br></br>
+                <label className="label" htmlFor="description">Description: </label>
+                <br></br>
+                <textarea className="form-input" onChange={handleForm} type="text" name="description" maxlength="500" required/>
                 <br></br>
                 <button type="submit" className="submit-button">Submit</button>
             </form>
