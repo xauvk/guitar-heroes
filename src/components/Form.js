@@ -48,7 +48,7 @@ function Form ({addGuitar}) {
                 <br></br>
                 <label className="label" htmlFor="price">Price: </label>
                 <br></br>
-                <input className="form-input" onChange={handleForm} type="number" name="price" step='0.01' required/>
+                <input className="form-input" onChange={handleForm} type="number" name="price" min="0" step='0.01' required/>
                 <br></br>
                 <label className="label" htmlFor="brand">Image of Guitar: </label>
                 <br></br>

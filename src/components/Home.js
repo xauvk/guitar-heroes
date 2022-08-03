@@ -69,7 +69,7 @@ function Home() {
                     <div className="home">
                         <NavBar />
                         <Search handleSearch={handleSearch} toggleSort={toggleSort} />
-                        <GuitarList guitarData={sortedGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
+                        <GuitarList guitarData={sortedGuitars()} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
                     </div>
                 </Route>
                 <Route path="/form">
