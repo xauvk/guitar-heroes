@@ -44,6 +44,8 @@ function Home() {
         )} else return filteredGuitars
     }
 
+    
+
     const removeFromCart = (id) => {
         const cartList = cartItems.filter(
             item => item.id !== id
