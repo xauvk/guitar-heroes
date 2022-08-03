@@ -42,10 +42,10 @@ function Home() {
 
     return (
         <div className='home'>
-            <Header />
             <NavBar />
             <Switch />
                 <Route exact path="/">
+                    <Header />
                     <Search handleSearch={handleSearch} />
                     <GuitarList guitarData={filteredGuitars} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
                 </Route>
