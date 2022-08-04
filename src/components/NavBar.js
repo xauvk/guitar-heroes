@@ -6,13 +6,13 @@ function NavBar () {
     return (
         <div className="nav">
             <NavLink exact to='/' className="navBar">
-                Home 
+            <i class="fa fa-home icon"></i> Home 
             </NavLink>
             <NavLink exact to='/form' className="navBar">
-                Add a guitar
+            <i class="fa fa-dollar icon"></i> Sell a guitar
             </NavLink>
             <NavLink exact to='/cart' className="nav-cart">
-                Cart
+            <i class="fa fa-shopping-cart icon"></i> Cart
             </NavLink>
         </div>
     )

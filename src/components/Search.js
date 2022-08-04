@@ -5,13 +5,16 @@ function Search ({handleSearch, toggleSort}) {
     const onSearch = (e) => handleSearch(e.target.value);
     
     return (
-        <div>
-            <label htmlFor="search" className="search-label">Lookup Guitar: </label>
-            <input className="search-bar"
+        <div className="input-icons">
+            <form className="box">
+                {/* <label htmlFor="search" className="search-label">Lookup Guitar: </label> */}
+                <i class="fa fa-search icon"></i>
+                <input className="search-bar"
                 onChange={onSearch}
                 type="text"
-                placeholder="Search..."
-            />
+                placeholder="Search for a guitar..."
+                />
+            </form>
             <br></br>
             <label className="sort">Lowest to Highest Price</label>
             <input className="sort-input" name="price-sort" value="lowtohigh" onClick={toggleSort} type="radio" />

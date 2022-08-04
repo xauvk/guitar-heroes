@@ -62,11 +62,11 @@ function Home() {
     }
 
     return (
-        <div className='whole-app'>
+        <div>
             <Header />
             <Switch />
-                <Route className="home" exact path="/">
-                    <div className="home">
+                <Route exact path="/">
+                    <div>
                         <NavBar />
                         <Search handleSearch={handleSearch} toggleSort={toggleSort} />
                         <GuitarList guitarData={sortedGuitars()} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
@@ -77,7 +77,7 @@ function Home() {
                     <Form addGuitar={addGuitar}/>
                 </Route>
                 <Route path="/cart">
-                    <div className="home">
+                    <div>
                         <NavBar />
                         <Cart cart={cartItems}/>
                     </div>

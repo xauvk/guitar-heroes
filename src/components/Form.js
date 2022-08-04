@@ -36,7 +36,7 @@ function Form ({addGuitar}) {
     return (
         <div>
             <form onSubmit={handleSubmit} className="form">
-                <h1>Add your own guitar!</h1>
+                <h1>Sell A Guitar!</h1>
                 <br></br>
                 <label className="label" htmlFor="brand">Brand/Model: </label>
                 <br></br>
