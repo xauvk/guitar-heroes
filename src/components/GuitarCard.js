@@ -19,7 +19,7 @@ function GuitarCard ({guitar, addToCart, removeFromCart, cartItems}) {
             </>
     )
 
-    const detailsDescription = <p>Description:<br/><br/>{guitar.description}</p>
+    const detailsDescription = <><h4>Description:</h4><p>{guitar.description}</p></>
 
     useEffect(() => {
         inCart ?  addToCart(guitar) : removeFromCart(guitar.id)
