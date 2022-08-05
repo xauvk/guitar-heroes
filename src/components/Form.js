@@ -22,11 +22,11 @@ function Form ({addGuitar}) {
         console.log(form)
         fetch('http://localhost:3000/guitars',
         {
-            'method': 'POST',
-            'headers': {
+            method: 'POST',
+            headers: {
                 'Content-Type': 'application/json'
             },
-            'body': JSON.stringify(form)
+            body: JSON.stringify(form)
         })
             .then(addGuitar(form))
             history.push("/");
