@@ -1,6 +1,10 @@
 import CartCard from "./CartCard";
 
 function Cart({cart}) {
+
+    const handlePurchase = () => {
+        alert('Thank you for your purchase!')
+    }
     
     const itemsPrice = cart.reduce((a,c) => a + c.price, 0);
     const taxPrice = itemsPrice * 0.14;
@@ -40,7 +44,7 @@ function Cart({cart}) {
                         <div>Total Price</div>
                         <div><strong>${totalPrice.toFixed(2)}</strong></div>
                     </div>
-                    <button className="purchase"> Buy</button>
+                    <button onClick={handlePurchase} className="submit-button">Checkout</button>
                 
                 
                 </>

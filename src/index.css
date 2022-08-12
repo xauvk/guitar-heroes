@@ -263,3 +263,22 @@ select:focus {
   font-size: 17px;
   padding-left: 10px; 
 }
+
+.row {
+  display: grid;
+  row-gap: 0.5rem;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.row-price {
+  display: grid;
+  row-gap: 0.5rem;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
